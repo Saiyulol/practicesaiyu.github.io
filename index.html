@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction à HTML et CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="background-fixed">
+  <!-- Menu -->
+  <div class="menu">
+    <div class="menu-item"><a href="#html">HTML</a></div>
+    <div class="menu-item"><a href="#css">CSS</a></div>
+  </div>
+  
+  <!-- Contenu principal -->
+  <div id="contenu-principal">
+    <h1>Introduction à HTML et CSS</h1>
+
+    <!-- HTML section -->
+    <h2 id="html">HTML</h2>
+      <p class="description">
+      <strong>HTML</strong> (<em>HyperText Markup Language</em>) est <span class="fonction">utilisé pour baliser un contenu, c'est à dire pour le structurer et lui donner du sens.</span>
+      <br>Le HTML sert, entre autres choses, à indiquer aux navigateurs quel texte doit être considéré comme un paragraphe,
+      quel texte doit être considéré comme un titre, que tel contenu est une image ou une vidéo.
+      </p>
+  <div class="base">
+    <h3>1. Les bases du HTML</h3>
+    <h4>1-1. Éléments, balises et attributs</h4>
+      <p> Il y a trois termes dont vous devez absolument comprendre le sens en HTML. Ce sont les termes 
+   élément, balise et attribut.
+    <br><br>Les éléments (ou <em>element</em> en anglais), tout d'abord, vont nous servir à définir des objets dans notre page.
+      </p>
+
+      <!-- Exemple élement -->
+      <div id="element"><span id="tagcolor">&lt;</span><span id="anchorcolor">a </span><span id="hrefcolor">href</span><span id="anchorcolor">=</span><span id="urlcolor">"URL"</span><span id="tagcolor">&gt;</span><span id="messagecolor">Hello World</span><span id="tagcolor">&lt;/</span><span id="anchorcolor">a</span><span id="tagcolor">&gt;</span>
+      </div>
+      <p>Les éléments sont constitués de balises. Dans la majorité des cas, un élément est constitué d'une 
+      paire de balises : une balise ouvrante et une balise fermante.
+      </p>
+
+      <!-- Exemple balise -->
+      <div id="element"><span id="tagcolor">&lt;</span><span id="anchorcolor">p</span><span id="tagcolor">&gt;</span><span id="message2color">___________</span><span id="tagcolor">&lt;/</span><span id="anchorcolor">p</span><span id="tagcolor">&gt;</span>
+      </div>
+
+      <!-- Tableau des Balises -->
+      <h4 class="titletable">Liste non exhaustive de balises HTML</h4>
+      <div id="balisetable">
+        <table>
+          <tr>
+            <th class="tagtype" colspan="2">Structure du document</th>
+          </tr>
+          <tr>
+            <th class="balisetype">Balise</th>
+            <th class="balisetype">Description</th>
+          </tr>
+          <tr>
+            <td class="balisetype">&lt;!DOCTYPE&gt;</td>
+            <td class="balisedescrip">Définit le type de document et la version de HTML utilisée.</td>
+          </tr>
+          <tr>
+            <td class="balisetype">&lt;html&gt;</td>
+            <td class="balisedescrip">Élément racine qui enveloppe tout le contenu de la page HTML.</td>
+          </tr>
+          <tr>
+            <td class="balisetype">&lt;head&gt;</td>
+            <td class="balisedescrip">Contient les métadonnées de la page, comme le titre et les liens vers les fichiers CSS et JavaScript.</td>
+          </tr>
+          <tr>
+            <td class="balisetype">&lt;body&gt;</td>
+            <td class="balisedescrip">Contient le contenu visible de la page, comme les textes, images et autres éléments.</td>
+          </tr>
+        </table>
+      </div>
+      <div id="balisetable">
+        <table>
+          <thead>
+            <tr>
+              <th class="tagtype" colspan="2">Informations de la page</th>
+            </tr>
+            <tr>
+              <th class="balisetype">Balise</th>
+              <th class="balisetype">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="balisetype">&lt;title&gt;</td>
+              <td class="balisedescrip">Définit le titre de la page affiché dans l'onglet du navigateur.</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;meta /&gt;</td>
+              <td class="balisedescrip">Fournit des métadonnées sur le document, telles que les descriptions, les mots-clés, et les paramètres de l'auteur.</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;base /&gt;</td>
+              <td class="balisedescrip">Spécifie l'URL de base pour toutes les URL relatives dans le document.</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;link /&gt;</td>
+              <td class="balisedescrip">Utilisé pour lier des ressources externes comme des feuilles de style CSS.</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;style&gt;</td>
+              <td class="balisedescrip">Contient des règles CSS pour la mise en forme du document.</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;script&gt;</td>
+              <td class="balisedescrip">Inclut du code JavaScript ou référence un fichier JavaScript externe.</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th class="tagtype" colspan="2">Balises de structure</th>
+            </tr>
+            <tr>
+              <th class="balisetype">Balise</th>
+              <th class="balisetype">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="balisetype">&lt;div&gt;</td>
+              <td class="balisedescrip">Section de division</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;span&gt;</td>
+              <td class="balisedescrip">Section en ligne</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;section&gt;</td>
+              <td class="balisedescrip">Section</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;nav&gt;</td>
+              <td class="balisedescrip">Navigation</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;header&gt;</td>
+              <td class="balisedescrip">En-tête</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;footer&gt;</td>
+              <td class="balisedescrip">Pied de page</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;article&gt;</td>
+              <td class="balisedescrip">Article</td>
+            </tr>
+            <tr>
+              <td class="balisetype">&lt;aside&gt;</td>
+              <td class="balisedescrip">Contenu associé</td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="https://alinekeller.ch/wp-content/uploads/2023/01/semantics-html-tags-2048x1536.png" class="semanticimg">
+      </div>
+    
+      <!-- CSS section -->
+  <div>
+    <h2 id="css">CSS</h2>
+      <p class="description">
+        <strong>CSS</strong> (<em>Cascading Style Sheets</em>) est <span class="fonction">utilisé pour appliquer des styles à un contenu, c'est-à-dire à le mettre en forme.</span>
+        Ainsi, avec le CSS, on pourra changer la couleur ou la taille d'un texte, positionner tel 
+        contenu à tel endroit de notre page web ou ajouter des bordures ou des ombres autour d'un contenu.
+      </p>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 SAIYU</p>
+  </footer>
+</body>
+</html>
